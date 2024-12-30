@@ -1,5 +1,11 @@
 # 딥페이크 영상 탐지 모델의 효과적인 딥러닝 백본 연구
 
+
+##### [2024년 대한전자공학회 하계학술대회]
+
+Seongho Kim, **Byeongwoo Son**, Hyoju Ahn, Changgyun Jin, [*Efficient Deep Learning-based Deepfake Detection with Local and Global Temporal Information*](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11891080) , in Proceedings of the 2024 대한전자공학회 하계학술대회, 2024. 
+
+
 ## 1. Intro
 
 ### 프로젝트 개요
@@ -87,16 +93,16 @@ Temporal Clue for Detection은 딥페이크 영상에서 원본과의 **시간�
 
 - 학습은 총 두 단계로 구성되어 있습니다. 첫번째 단계에서는 데이터에서 공간적&시간적 정보들을 추출한 후, 두번째 단계에서 분류(classification)와 분류를 도와줄 1단계의 표현학습(prediction)이 같이 학습되어 Fake Video를 탐지합니다.
 
-    **(1) Stage1 : spatial & temporal representation learning ( Non-Contrastive Learning )**
+    **(1) Stage1 : Spatial & Temporal representation learning ( Non-Contrastive Learning )**
 
     - stage1은 실제 영상과 오디오 데이터만을 이용해서 실제 영상의 공간적&시간적 표현들을 얻는 단계입니다.
-    - Cross multi modal방식의 self-supervision learning을 사용하여 시간적으로 밀도있는 비디오 representation을 학습합니다.
-        - **student and teacher pair for each modality**
+    - Cross multi modal방식의 self-supervised learning을 사용하여 시간적으로 밀도있는 비디오 representation을 학습합니다.
+        - **student and teacher pair for each modality** : 
         teachers produce targets, students from the other modality predict
         video teacher: target A 생성 ⇒  audio student: target A 예측
         audio teacher: target B 생성 ⇒  video student: target B 예측
 
-    **(2) Stage2 : fake video detection ( Multi-task Learning)**
+    **(2) Stage2 : Fake video detection ( Multi-task Learning )**
 
     - Task 1 : Real / Fake Classification
         - 실제 영상과 딥페이크 영상을 가지고 Real영상인지 Fake영상인지 분류합니다.
@@ -122,7 +128,7 @@ Temporal Clue for Detection은 딥페이크 영상에서 원본과의 **시간�
 
 ## 4. Dataset
 
-### (1) Stage1 (real data)
+### (1) Stage1 (Real data)
     
 <p align="center">
 <img src = "./readme-photos/Untitled 4.png" width=80%></img>
@@ -132,7 +138,7 @@ Temporal Clue for Detection은 딥페이크 영상에서 원본과의 **시간�
     - 수백 명의 사람이 말하는 500개 다른 단어의 최대 1000개 문구로 구성된 비디오 영상으로, 모든 비디오는 29프레임 (1.16초) 길이이며, 총 50만개의 데이터입니다.
     - 우리는 **`5,000개의 데이터`**만을 이용해서 학습을 진행하였습니다.
         
-### (2) Stage2 (fake data)
+### (2) Stage2 (Fake data)
     
     
     
