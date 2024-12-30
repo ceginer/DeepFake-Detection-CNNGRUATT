@@ -3,7 +3,9 @@
 
 ##### [2024년 대한전자공학회 하계학술대회]
 
-Seongho Kim, **Byeongwoo Son**, Hyoju Ahn, Changgyun Jin, [*Efficient Deep Learning-based Deepfake Detection with Local and Global Temporal Information*](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11891080) , in Proceedings of the 2024 대한전자공학회 하계학술대회, 2024. 
+Seongho Kim, **Byeongwoo Son**, Hyoju Ahn, Changgyun Jin
+
+[*Efficient Deep Learning-based Deepfake Detection with Local and Global Temporal Information, in Proceedings of the 2024 대한전자공학회 하계학술대회,*](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11891080) 2024. 
 
 
 ## 1. Intro
